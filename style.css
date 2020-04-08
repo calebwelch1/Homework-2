@@ -1,0 +1,18 @@
+.li {
+    display: inline;
+}
+
+.aboutBlock{
+    border: solid black;
+    position:;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+}
+
+.centerCard {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
