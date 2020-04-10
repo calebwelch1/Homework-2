@@ -7,13 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-    <style>
-        .col-lg-4 {
-            border: solid red;
-            background-color: yellow;
-        }
-    </style>
+    <title>Portfolio</title>
 </head>
 
 <body>
@@ -44,61 +38,137 @@
         </div>
     </nav>
     <H1>Portfolio</H1>
-    <section class="col-lg-12">
-        <div class="main">
-            <div class="row">
-                <div class=" col-md-4 wrapper">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam sunt
-                        eaque
-                        labore dolorum sint tempore est rem!</p>
+    <div class="card centerCard " style="width: 50%;">
+        <div class="card-body ">
+            <h5 class="card-title">Portfolio</h5>
+            <div class="container underline"></div>
+            <!-- So here I have tried to make a centered box with three columns where I would then place individual cards that lead to different content.
+ but now I've found a much easier way to do this with bootstrap using "card-deck" -->
+            <!-- <section class="col-lg-12">
+                <div class="main">
+                    <div class="row justify-content-center">
+                        <div class=" col-md-4 wrapper">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam
+                                sunt
+                                eaque
+                                labore dolorum sint tempore est rem!</p>
+                        </div>
+                        <div class=" col-md-4 wrapper">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam
+                                sunt
+                                eaque
+                                labore dolorum sint tempore est rem!</p>
+                        </div>
+                        <div class=" col-md-4 wrapper">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam
+                                sunt
+                                eaque
+                                labore dolorum sint tempore est rem!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-md-4 wrapper">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam
+                                sunt
+                                eaque
+                                labore dolorum sint tempore est rem!</p>
+                        </div>
+                        <div class=" col-md-4 wrapper">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam
+                                sunt
+                                eaque
+                                labore dolorum sint tempore est rem!</p>
+                        </div>
+                        <div class=" col-md-4 wrapper">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam
+                                sunt
+                                eaque
+                                labore dolorum sint tempore est rem!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-md-4 wrapper">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam
+                                sunt
+                                eaque
+                                labore dolorum sint tempore est rem!</p>
+                        </div>
+                        <div class=" col-md-4 wrapper">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam
+                                sunt
+                                eaque
+                                labore dolorum sint tempore est rem!</p>
+                        </div>
+                        <div class=" col-md-4 wrapper">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam
+                                sunt
+                                eaque
+                                labore dolorum sint tempore est rem!</p>
+                        </div>
+                    </div>
                 </div>
-                <div class=" col-md-4 wrapper">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam sunt
-                        eaque
-                        labore dolorum sint tempore est rem!</p>
+            </section> -->
+            <div class="card-deck">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Projects</h5>
+                        <p class="card-text">Projects in Javascript</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
                 </div>
-                <div class=" col-md-4 wrapper">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam sunt
-                        eaque
-                        labore dolorum sint tempore est rem!</p>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1533237264985-ee62f6d342bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        class="card-img-top" alt="Digital score board">
+                    <div class="card-body">
+                        <h5 class="card-title">Games</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- Found a way to break it (image resizing) but not sure how i did. Probably just specific dimensions of image. -->
+                    <img src="https://eloquentjavascript.net/img/cover.jpg" class="card-img-top"
+                        alt="Eloquent Javascript Cover">
+                    <div class="card-body">
+                        <h5 class="card-title">Eloquent Javascript</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class=" col-md-4 wrapper">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam sunt
-                        eaque
-                        labore dolorum sint tempore est rem!</p>
+            <div class="card-deck">
+                <div class="card">
+                    <!-- very interesting if I place a larger image in the card it will auto-resize to card size -->
+                    <img src="images/LEATHERFACERBfinal960px.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Artwork</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
                 </div>
-                <div class=" col-md-4 wrapper">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam sunt
-                        eaque
-                        labore dolorum sint tempore est rem!</p>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1535340582796-799448c62e08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                        class="card-img-top" alt="Colored Pencils">
+                    <div class="card-body">
+                        <h5 class="card-title">Animation</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
                 </div>
-                <div class=" col-md-4 wrapper">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam sunt
-                        eaque
-                        labore dolorum sint tempore est rem!</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class=" col-md-4 wrapper">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam sunt
-                        eaque
-                        labore dolorum sint tempore est rem!</p>
-                </div>
-                <div class=" col-md-4 wrapper">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam sunt
-                        eaque
-                        labore dolorum sint tempore est rem!</p>
-                </div>
-                <div class=" col-md-4 wrapper">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempora nesciunt quisquam sunt
-                        eaque
-                        labore dolorum sint tempore est rem!</p>
+                <div class="card">
+                    <img src="https://placekitten.com/500/500" class="card-img-top" alt="A kitten">
+                    <h5 class="card-title">Other</h5>
+                    <p class="card-text"></p>
+                    <p class="card-text"><small class="text-muted"></small></p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    </div>
+    </div>
+
 
 </body>
 <footer class=" navbar navbar-expand-lg navbar-dark bg-dark" style=>
